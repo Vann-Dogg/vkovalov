@@ -3,7 +3,7 @@ import Link from 'next/link'
 class Menu extends React.Component {
   render() {
     return(
-      <ul className="navbar-nav flex-column w-100 text-center">
+      <ul className="navbar-nav">
         <li className="nav-item">
           <Link href="/">Home</Link>
         </li>

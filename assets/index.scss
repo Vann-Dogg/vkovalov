@@ -6,13 +6,17 @@ $lakers-dark: #191219;
 
 body {
     background-color: #923cb5;
-    background-image: linear-gradient(147deg, #552583 0%, #000000 74%);
+    background-image: linear-gradient(147deg, #552583 0%, #4A00E0 74%);
     overflow-x: hidden;
 }
 
+h1 {
+    font-weight: 900;
+}
+
 #header {
-    background-color: #2d3436;
-    background-image: linear-gradient(115deg, #2d3436 0%, #000000 74%);
+    background: rgba(0,0,0,0.64);
+    z-index: 9999;
     box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);;
     .navbar {
         background: transparent;
@@ -28,47 +32,27 @@ body {
 @media all and (min-width: 992px) {
     #header  {
         position: fixed;
-        width: 320px;
-        height: 100vh;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 100px;
         display: flex;
-        .navbar-collapse {
-            display: flex;
-            height: 100%;
-            align-items: center;
-            .nav-item {
-                padding: 10px 0;
-                min-height: 100px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                a {
-                    color: white;
-                    text-transform: uppercase;
-                    &:hover {
-                        text-decoration: none;
-                        color: $lakers-gold;
-                    }
-                }
-            }
-        }
     }
     #page-content {
-        width: calc(100% - 320px);
-        float: right;
         .content{
             min-height: 50vh;
             width: 90%;
             max-width: 1070px;
-            &#about-content {
+            #about-content {
                 background: yellow;
             }
-            &#projects-content {
+            #projects-content {
                 background-color: #FDB927;
             }
-            &#contact-content {
+            #contact-content {
                 background: red;
             }
-            &#services-content {
+            #services-content {
                 background: blue;
             }
         }
