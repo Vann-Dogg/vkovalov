@@ -1,0 +1,83 @@
+
+@import 'fonts.scss';
+$lakers-gold: #FDB927;
+$lakers-dark: #191219;
+
+
+body {
+    background-color: #923cb5;
+    background-image: linear-gradient(147deg, #552583 0%, #000000 74%);
+    overflow-x: hidden;
+}
+
+#header {
+    background-color: #2d3436;
+    background-image: linear-gradient(115deg, #2d3436 0%, #000000 74%);
+    box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);;
+    .navbar {
+        background: transparent;
+    }
+}
+
+#page-content {
+    color: white;
+    padding: 15px;
+    min-height: 100vh;
+}
+
+@media all and (min-width: 992px) {
+    #header  {
+        position: fixed;
+        width: 250px;
+        height: 100vh;
+        display: flex;
+        .navbar-collapse {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            .nav-item {
+                padding: 10px 0;
+                min-height: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                a {
+                    color: white;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    &:hover {
+                        text-decoration: none;
+                        color: $lakers-gold;
+                    }
+                }
+            }
+        }
+    }
+    #page-content {
+        width: calc(100% - 250px);
+        float: right;
+        .content{
+            min-height: 50vh;
+            width: 90%;
+            max-width: 1070px;
+            &#about-content {
+                background: yellow;
+            }
+            &#projects-content {
+                background-color: #FDB927;
+            }
+            &#contact-content {
+                background: red;
+            }
+            &#services-content {
+                background: blue;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 1199px) {
+    body {
+        overflow: hidden;
+    }
+}
