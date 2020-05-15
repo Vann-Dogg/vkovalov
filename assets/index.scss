@@ -28,7 +28,7 @@ body {
 @media all and (min-width: 992px) {
     #header  {
         position: fixed;
-        width: 250px;
+        width: 320px;
         height: 100vh;
         display: flex;
         .navbar-collapse {
@@ -44,7 +44,6 @@ body {
                 a {
                     color: white;
                     text-transform: uppercase;
-                    font-weight: bold;
                     &:hover {
                         text-decoration: none;
                         color: $lakers-gold;
@@ -54,7 +53,7 @@ body {
         }
     }
     #page-content {
-        width: calc(100% - 250px);
+        width: calc(100% - 320px);
         float: right;
         .content{
             min-height: 50vh;
