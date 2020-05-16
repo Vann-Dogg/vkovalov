@@ -9,9 +9,9 @@ export default function Header() {
     <header id="header">
       <ReactBS.Container>
         <ReactBS.Navbar expand="lg">
-          <Link href="/">
-            <span className="navbar-brand">V.Kovalov</span>
-          </Link>
+            <span className="navbar-brand">
+              <Link href="/">V.Kovalov</Link>
+            </span>
             <ReactBS.Navbar.Toggle aria-controls="basic-navbar-nav" />
             <ReactBS.Navbar.Collapse id="basic-navbar-nav">
                 <Menu />

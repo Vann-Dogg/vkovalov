@@ -19,12 +19,14 @@
     "bootstrap": "^4.5.0",
     "framer": "^1.1.7",
     "framer-motion": "^1.10.3",
+    "materialize-css": "^1.0.0-rc.2",
     "next": "^9.4.0",
     "node-sass": "^4.14.1",
     "particles-bg": "^2.5.0",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
+    "react-materialize": "^3.9.0",
     "react-particles-js": "^3.2.1"
   }
 }

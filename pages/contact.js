@@ -1,7 +1,45 @@
-export default function Contact() {
+import React, { Component } from 'react'
+import { motion } from 'framer-motion'
+
+const PageVariants = {
+    initial: {
+      opacity: 0,
+      y: "-10vh",
+      scale: 0.8
+    },
+    in: {
+        opacity: 1,
+        y: 0,
+        scale: 1
+    },
+    out: {
+        opacity: 0,
+        y: "-10vh",
+        scale: 0.8
+    }
+};
+  
+const PageTransition = {
+    type: "tween",
+    ease: "anticipate",
+    duration: 1
+};
+
+export default class Contact extends React.Component {
+  render() {
     return (
-      <div id="contact-content">
-        CONTACT
-    </div> 
-  )
+      <motion.div
+        initial="out"
+        animate="in"
+        exit="out"
+        variants={PageVariants}
+        transition={PageTransition}
+        className="loading"
+      >
+        <div id="contact-page">
+          CONTACT
+        </div>
+      </motion.div> 
+    )
+  }   
 }

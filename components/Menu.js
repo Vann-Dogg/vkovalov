@@ -14,7 +14,7 @@ class Menu extends React.Component {
           <Link href="/projects">My Projects</Link>
         </li>
         <li className="nav-item">
-          <Link href="/about">About me</Link>
+          <Link href="/about">About Me</Link>
         </li>
         <li className="nav-item">
           <Link href="/contact">Contact Me</Link>

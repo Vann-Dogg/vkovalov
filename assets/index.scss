@@ -1,17 +1,55 @@
 
-@import 'fonts.scss';
-$lakers-gold: #FDB927;
-$lakers-dark: #191219;
+@import 'fonts';
+@import 'colors';
+@import 'home';
+@import 'services';
+@import 'projects';
+@import 'about';
+@import 'contact';
 
+a {
+    text-decoration: none !important;
+}
 
 body {
-    background-color: #923cb5;
-    background-image: linear-gradient(147deg, #552583 0%, #4A00E0 74%);
+    background: linear-gradient(0deg, #2d3436 0%, #000000 74%);
     overflow-x: hidden;
 }
 
 h1 {
+    margin-bottom: 20px;
     font-weight: 900;
+    line-height: 1.3;
+    font-size: 80px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.btn {
+    outline: none;
+    padding: 0;
+    a {
+        padding: 10px 30px;
+        transition: background-color .2s ease-out;
+        border: 2px solid;
+        background-color: $lakers-dark;
+        border-color: $lakers-dark;
+        color: white;
+        border-radius: 50px;
+        box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
+        transition: .3s ease-out;
+    }
+    &-purple {
+        a {
+            background-color: $lakers-purple;
+            border-color: $lakers-purple;
+        }
+    }
+    &:focus {
+        outline: none;
+    }
 }
 
 #header {
@@ -42,7 +80,7 @@ h1 {
         color: #fff;
         .navbar {
             height: 100%;
-            &-brand {
+            &-brand a {
                 font-size: 20px;
                 font-weight: 700;
                 color: #fff;
@@ -58,7 +96,6 @@ h1 {
                         line-height: 24px;
                         letter-spacing: 0.3px;
                         &:hover {
-                            text-decoration: none;
                             color: $lakers-gold;
                         }
                     }
@@ -67,22 +104,8 @@ h1 {
         }
     }
     #page-content {
-        .content{
+        .content {
             min-height: 50vh;
-            width: 90%;
-            max-width: 1070px;
-            #about-content {
-                background: yellow;
-            }
-            #projects-content {
-                background-color: #FDB927;
-            }
-            #contact-content {
-                background: red;
-            }
-            #services-content {
-                background: blue;
-            }
         }
     }
 }
