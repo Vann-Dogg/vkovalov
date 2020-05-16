@@ -21,3 +21,18 @@
         }
     }
 }
+
+@media all and (max-width: 767px) {
+    #home-page {
+        h1 {
+            .lastname {
+                color: $lakers-purple;
+            }
+        }
+        .positions {
+            line-height: 1.5; 
+            flex-direction: column;
+            padding: 0;
+        }
+    }
+}
