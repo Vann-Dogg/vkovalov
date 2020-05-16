@@ -23,11 +23,11 @@ export default class ContactButton extends React.Component {
         {this.state.loading || !this.state.page ? (
               <div>Loading...</div>
             ) : ( 
-            <button className="btn btn-purple">
-                <Link href={this.state.page.acf.cb_link}>
+              <Link  href={this.state.page.acf.cb_link}>
+                <a className="btn btn-purple">
                   {this.state.page.acf.cb_text}
-                </Link>
-            </button>
+                </a> 
+              </Link>  
           )} 
       </>
     )

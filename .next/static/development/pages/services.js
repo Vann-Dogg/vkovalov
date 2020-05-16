@@ -273,7 +273,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(f
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!**********************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fservices&absolutePagePath=%2FUsers%2Fuser%2FDocuments%2Fdomains%2Fvkovalov%2Fpages%2Fservices.js&hotRouterUpdates=false ***!
   \**********************************************************************************************************************************************************************/
@@ -296,4 +296,4 @@ eval("module.exports = dll_c2e10d183b950a67d9e7;//# sourceURL=[module]\n//# sour
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);

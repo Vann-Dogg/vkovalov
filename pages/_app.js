@@ -1,7 +1,7 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../assets/index.scss'
-import { AnimatePresence } from "framer-motion"
+import * as ReactBS from 'react-bootstrap'
 //import ParticlesBg from "particles-bg";
 import Header from '../components/Header'
 
@@ -11,11 +11,9 @@ export default function App({ Component, pageProps }) {
       <>
         <Header />
         <main id="page-content" className="d-flex flex-column justify-content-center align-items-center">
-          <AnimatePresence exitBeforeEnter>
-            <div className="content container">
+            <ReactBS.Container className="content">
               <Component {...pageProps} />
-            </div>
-          </AnimatePresence>
+            </ReactBS.Container>
         </main>
       </>
     )

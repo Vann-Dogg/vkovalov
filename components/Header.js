@@ -6,10 +6,10 @@ import Link from 'next/link'
 
 export default function Header() {
   return (
-    <header id="header">
+    <header id="header" className="d-flex align-items-center">
       <ReactBS.Container>
         <ReactBS.Navbar expand="lg">
-            <span className="navbar-brand">
+            <span className="navbar-brand uppercase">
               <Link href="/">V.Kovalov</Link>
             </span>
             <ReactBS.Navbar.Toggle aria-controls="basic-navbar-nav" />

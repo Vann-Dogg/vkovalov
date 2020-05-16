@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import { motion } from 'framer-motion'
 import Head from 'next/head'
 import Name from '../components/home/Name'
-//import Positions from '../components/home/Positions'
+import Positions from '../components/home/Positions'
+import HomeDescription from '../components/home/HomeDescription'
 import ContactButton from '../components/home/ContactButton'
 
 const PageVariants = {
@@ -69,11 +70,11 @@ export default class Index extends React.Component {
             </Head>
             <div id="home-page" className="content-inside text-center">
               <Name />
-              <br/>
-              <p>HERE MUST BE POSITIONS</p>
-              <br/>
-              <p>HERE MUST BE DESCRIPTION</p>
-              <br/>
+                <br/>
+              <Positions />
+                <br/>
+              <HomeDescription />
+                <br/>
               <ContactButton />
             </div>
             </>
