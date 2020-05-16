@@ -6,16 +6,18 @@ import Link from 'next/link'
 
 export default function Header() {
   return (
-    <header id="header" className="justify-content-around">
-      <Link className="navbar-brand" href="/">
-          <img src='./logo.png' alt="Volodymyr Kovalov" />
-        </Link>
-        <ReactBS.Navbar expand="lg" className="w-100">
+    <header id="header">
+      <ReactBS.Container>
+        <ReactBS.Navbar expand="lg">
+          <Link href="/">
+            <span className="navbar-brand">V.Kovalov</span>
+          </Link>
             <ReactBS.Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <ReactBS.Navbar.Collapse className="w-100" id="basic-navbar-nav">
+            <ReactBS.Navbar.Collapse id="basic-navbar-nav">
                 <Menu />
             </ReactBS.Navbar.Collapse>
         </ReactBS.Navbar>
+      </ReactBS.Container>
     </header>
   )
 }

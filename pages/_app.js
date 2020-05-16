@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }) {
             </div>
           </AnimatePresence>
         </main>
-        <ParticlesBg type="square" bg={true} num={200} />
+        <ParticlesBg color="#ffffff" type="cobweb" bg={true} num={200} />
       </>
     )
 }
