@@ -28,7 +28,7 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/services": [
+    "/projects": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]
