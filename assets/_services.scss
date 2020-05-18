@@ -1,3 +1,7 @@
 #services-page {
-    
+    .services-cards {
+        &__content {
+            background: $lakers-purple;
+        }
+    }
 }
