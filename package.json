@@ -26,7 +26,11 @@
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
+    "react-leaf-carousel": "^2.0.0",
     "react-materialize": "^3.9.0",
     "react-particles-js": "^3.2.1"
+  },
+  "devDependencies": {
+    "react-alice-carousel": "^1.18.0"
   }
 }

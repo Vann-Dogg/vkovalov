@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { motion } from 'framer-motion'
+import ProjectsTitle from '../components/projects/ProjectsTitle'
+import ProjectsSlider from '../components/projects/ProjectsSlider'
 
 const PageVariants = {
     initial: {
@@ -36,7 +38,9 @@ export default class Projects extends React.Component {
                 className="loading"
             >
                 <div id="projects-page">
-                    <h1 className="page-title uppercase text-center">PROJECTS</h1>
+                    <ProjectsTitle />
+                    <br/>
+                    <ProjectsSlider />
                 </div>
             </motion.div> 
         )

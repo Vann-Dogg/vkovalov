@@ -7,13 +7,15 @@
 @import 'about';
 @import 'contact';
 
-a {
-    text-decoration: none !important;
-}
+
 
 body {
     background: linear-gradient(315deg, $lakers-dark, $lakers-purple 274%);
     overflow-x: hidden;
+}
+
+a {
+    text-decoration: none !important;
 }
 
 h1 {
@@ -21,6 +23,9 @@ h1 {
     font-weight: 900;
     line-height: 1.3;
     font-size: 36px;
+}
+img {
+    max-width: 100%;
 }
 
 .uppercase {
