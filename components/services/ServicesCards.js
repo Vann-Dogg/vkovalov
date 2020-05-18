@@ -45,7 +45,10 @@ export default class ServicesCards extends React.Component {
             <ReactBS.Col sm={6} lg={3} className="services-cards__item">
               <ReactBS.Card className="services-cards__content text-center">
                 <div class="card-head d-flex flex-column justify-content-center">
-                  <h3 class="card-title">{service.title.rendered}</h3>
+                  <h3 class="card-title d-flex align-items-center w-100 justify-content-center mb-2">{service.title.rendered}</h3>
+                  <div className="price-wrapper">
+                    from <span className="price">{service.acf.price}$</span> / {service.acf.price_type}
+                  </div>
                 </div>
                 <ReactBS.Card.Body>
                   <div className="services-list" dangerouslySetInnerHTML={{ __html: service.content.rendered }} />

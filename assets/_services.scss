@@ -7,16 +7,25 @@
                 &-head {
                     background: $lakers-purple;
                     padding: 5px;
-                    min-height: 80px;
+                    .price-wrapper {
+                        color: $text-gray;
+                        .price {
+                            color: $lakers-gold;
+                            font-size: 32px;
+                            font-weight: 700;
+                        }
+                    }
                 }
                 &-title {
                     font-size: 20px;
                     line-height: 1.5rem;
                     font-weight: 300;
                     margin: 0;
+                    min-height: 50px;
                 }
                 &-body {
                     padding: 0;
+                    font-size: 14px;
                     .services-list {
                         ul {
                             list-style: none;
@@ -34,5 +43,11 @@
                 }
             }
         }
+    }
+}
+
+@media all and (max-width: 1399px) {
+    #services-page {
+        padding-top: 75px;
     }
 }
