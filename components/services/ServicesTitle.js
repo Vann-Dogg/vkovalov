@@ -20,10 +20,10 @@ export default class ServicesTitle extends React.Component {
     return (
       <>
         {this.state.loading || !this.state.page ? (
-              <div>Loading...</div>
+              <div></div>
             ) : ( 
-            <h1 className="uppercase">
-                {this.state.page.title}   
+            <h1 className="uppercase text-center">
+                {this.state.page.title.rendered} 
             </h1>
           )} 
       </>

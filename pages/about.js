@@ -37,7 +37,7 @@ export default class About extends React.Component {
           className="loading"
         >
           <div id="about-page">
-            ABOUT
+            <h1 className="page-title uppercase text-center">ABOUT</h1>
           </div> 
         </motion.div>
       )

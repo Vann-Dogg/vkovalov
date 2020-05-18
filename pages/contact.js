@@ -37,7 +37,7 @@ export default class Contact extends React.Component {
         className="loading"
       >
         <div id="contact-page">
-          CONTACT
+          <h1 className="page-title uppercase text-center">CONTACT</h1>
         </div>
       </motion.div> 
     )

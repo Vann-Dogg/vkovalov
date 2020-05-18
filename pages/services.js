@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { motion } from 'framer-motion'
 import ServicesTitle from '../components/services/ServicesTitle'
+import ServicesCards from '../components/services/ServicesCards'
 
 const PageVariants = {
     initial: {
@@ -38,6 +39,8 @@ export default class Services extends React.Component {
             id="services-page"
             >
                 <ServicesTitle />
+                <br/>
+                <ServicesCards />
             </motion.div> 
         )
     }

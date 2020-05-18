@@ -37,7 +37,7 @@ export default class Projects extends React.Component {
                 className="loading"
             >
                 <div id="projects-page">
-                    PROJECTS
+                    <h1 className="page-title uppercase text-center">PROJECTS</h1>
                 </div>
             </motion.div> 
         )

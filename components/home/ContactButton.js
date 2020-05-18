@@ -21,7 +21,7 @@ export default class ContactButton extends React.Component {
     return (
       <>
         {this.state.loading || !this.state.page ? (
-              <div>Loading...</div>
+              <div></div>
             ) : ( 
               <Link  href={this.state.page.acf.cb_link}>
                 <a className="btn btn-purple">

@@ -20,7 +20,7 @@ export default class HomeDescripion extends React.Component {
     return (
       <>
         {this.state.loading || !this.state.page ? (
-              <div>Loading...</div>
+              <div></div>
             ) : ( 
             <p className="home-description">
                 {this.state.page.acf.description} 
