@@ -7,7 +7,8 @@ export default class ServicesTitle extends React.Component {
   };
   
   async componentDidMount() {
-    const url = 'http://vkovalov.me/wp-json/wp/v2/pages/19';
+    const rest = process.env.NEXT_PUBLIC_REST_LINK;
+    const url = rest+'wp-json/wp/v2/pages/19';
     const response = await fetch(url);
     const data = await response.json();
     this.setState({ 

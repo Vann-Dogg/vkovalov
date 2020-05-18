@@ -42,6 +42,9 @@ h1 {
     &-purple {
         background-color: $lakers-purple;
         border-color: $lakers-purple;
+        &:hover {
+            color: $lakers-gold;
+        }
     }
     &:focus {
         outline: none;
@@ -114,13 +117,8 @@ h1 {
     }
 }
 
-@media all and (min-width: 1199px) {
-    body {
-        overflow: hidden;
-    }
-}
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 991px) {
     #page-content {
         padding-top: 150px;
     }

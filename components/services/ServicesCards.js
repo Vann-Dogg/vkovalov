@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Link from 'next/link'
 import axios from 'axios'
 import * as ReactBS from 'react-bootstrap'
 
@@ -14,7 +15,8 @@ export default class ServicesCards extends React.Component {
   }
 
   componentDidMount() {
-    const url = 'http://vkovalov.me/wp-json/wp/v2/services?filter[orderby]=date&order=asc';
+    const rest = process.env.NEXT_PUBLIC_REST_LINK;
+    const url = rest+'wp-json/wp/v2/services?filter[orderby]=date&order=asc';
     this.setState(
       { loading: true }, () =>{
         axios.get(url)
@@ -42,9 +44,15 @@ export default class ServicesCards extends React.Component {
           {services.map(service => (
             <ReactBS.Col sm={6} lg={3} className="services-cards__item">
               <ReactBS.Card className="services-cards__content text-center">
-                <div class="card-head">
+                <div class="card-head d-flex flex-column justify-content-center">
                   <h3 class="card-title">{service.title.rendered}</h3>
                 </div>
+                <ReactBS.Card.Body>
+                  <div className="services-list" dangerouslySetInnerHTML={{ __html: service.content.rendered }} />
+                  <Link href="contact">
+                    <a className="btn btn-purple">Click to Order</a>
+                  </Link>
+                </ReactBS.Card.Body>
               </ReactBS.Card>
             </ReactBS.Col>
           ))}

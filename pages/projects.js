@@ -17,8 +17,7 @@ const PageVariants = {
         y: "-10vh",
         scale: 0.8
     }
-};
-  
+}; 
 const PageTransition = {
     type: "tween",
     ease: "anticipate",
