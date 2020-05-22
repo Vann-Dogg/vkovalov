@@ -1,5 +1,7 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 import '../assets/index.scss'
 import * as ReactBS from 'react-bootstrap'
 //import ParticlesBg from "particles-bg";
@@ -10,7 +12,7 @@ export default function App({ Component, pageProps }) {
   return (
       <>
         <Header />
-        <main id="page-content" className="d-flex flex-column justify-content-center align-items-center">
+        <main id="main">
             <ReactBS.Container className="content">
               <Component {...pageProps} />
             </ReactBS.Container>

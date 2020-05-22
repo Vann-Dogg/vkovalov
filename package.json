@@ -28,7 +28,9 @@
     "react-dom": "^16.13.1",
     "react-leaf-carousel": "^2.0.0",
     "react-materialize": "^3.9.0",
-    "react-particles-js": "^3.2.1"
+    "react-particles-js": "^3.2.1",
+    "react-slick": "^0.26.1",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "react-alice-carousel": "^1.18.0"

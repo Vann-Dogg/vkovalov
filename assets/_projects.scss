@@ -1,4 +1,28 @@
-#projects-page {
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
 
+#projects-page {
+    .projects {
+        .slick-slide {
+            padding: 0 10px;
+            .project {
+                &-slide {
+                    min-height: 320px;
+                    position: relative;
+                    img {
+                        height: 100%;
+                        object-fit: cover;
+                        max-height: 320px
+                    }
+                }
+                &-content {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
             

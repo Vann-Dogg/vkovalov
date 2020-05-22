@@ -6,30 +6,6 @@ import Positions from '../components/home/Positions'
 import HomeDescription from '../components/home/HomeDescription'
 import ContactButton from '../components/home/ContactButton'
 
-const PageVariants = {
-  initial: {
-    opacity: 0,
-    y: "-100vh",
-    scale: 0.8
-  },
-  in: {
-      opacity: 1,
-      y: 0,
-      scale: 1
-  },
-  out: {
-      opacity: 0,
-      y: "-10vh",
-      scale: 0.8
-  }
-};
-
-const PageTransition = {
-  type: "tween",
-  ease: "anticipate",
-  duration: 1
-};
-
 export default class Index extends React.Component {
   
   state = {
@@ -50,14 +26,7 @@ export default class Index extends React.Component {
   render() {
     return (
       <>
-        <motion.div 
-          initial="out"
-          animate="in"
-          exit="out"
-          variants={PageVariants}
-          transition={PageTransition}
-          className="loading"
-        >
+        <motion.div className="loading">
           {this.state.loading || !this.state.page ? (
               <div className="text-center">Loading...</div>
             ) : (
@@ -69,7 +38,7 @@ export default class Index extends React.Component {
               <meta name="author" content="Volodymyr Kovalov" />
               <meta property="og:title" content={this.state.page.acf.seo_title} key="title" />
             </Head>
-            <div id="home-page" className="content-inside text-center">
+            <div id="home-page" className="content-inside text-center page-content">
               <Name />
                 <br/>
               <Positions />

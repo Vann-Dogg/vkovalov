@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default class Menu extends React.Component {
   render() {
     return(
-      <ul className="navbar-nav ml-auto">
+      <ul className="navbar-nav mx-auto">
         <li className="nav-item">
           <Link href="/">
             <a className="nav-link">
@@ -13,9 +13,9 @@ export default class Menu extends React.Component {
           </Link>
         </li>
         <li className="nav-item">
-          <Link href="/services">
+          <Link href="/about">
             <a className="nav-link">
-              Services
+              About Me
             </a>
           </Link>
         </li>
@@ -23,13 +23,6 @@ export default class Menu extends React.Component {
           <Link href="/projects">
             <a className="nav-link">
               My Projects
-            </a>
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link href="/about">
-            <a className="nav-link">
-              About Me
             </a>
           </Link>
         </li>
